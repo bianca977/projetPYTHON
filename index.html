@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Polish companies bankrupcy</title>
+   
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict Bankrupcy</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="Attr13" placeholder="Attr13" required="required" />
+      <input type="text" name="Attr19" placeholder="Attr19" required="required" />
+		  <input type="text" name="Attr20" placeholder="Attr20" required="required" />
+      <input type="text" name="Attr23" placeholder="Attr23" required="required" />
+      <input type="text" name="Attr31" placeholder="Attr30" required="required" />
+      <input type="text" name="Attr31" placeholder="Attr31" required="required" />
+      <input type="text" name="Attr39" placeholder="Attr39" required="required" />
+      <input type="text" name="Attr42" placeholder="Attr42" required="required" />
+      <input type="text" name="Attr43" placeholder="Attr43" required="required" />
+      <input type="text" name="Attr44" placeholder="Attr44" required="required" />
+      <input type="text" name="Attr49" placeholder="Attr49" required="required" />
+      <input type="text" name="Attr55" placeholder="Attr55" required="required" />
+      <input type="text" name="Attr56" placeholder="Attr56" required="required" />
+      <input type="text" name="Attr58" placeholder="Attr58" required="required" />
+      <input type="text" name="Attr62" placeholder="Attr62" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
